@@ -125,3 +125,9 @@ include hack/make/go.mk
 # overlays
 
 lint/vet: GO_PKGS=$(shell go list ./... | grep -v -e '.pb.go' -e 'strutil')
+
+.PHONY: tools/golangci-lint
+tools/golangci-lint:
+ifeq (, $(shell command -v golangci-lint))
+	GO111MODULE=off go get -u -v github.com/golangci/golangci-lint/cmd/golangci-lint
+endif
