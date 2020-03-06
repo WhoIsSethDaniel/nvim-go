@@ -15,7 +15,7 @@ require (
 	github.com/hokaccha/go-prettyjson v0.0.0-20190818114111-108c894c2c0e
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/motemen/go-astmanip v0.0.0-20160104081417-d6ad31f02153
-	github.com/neovim/go-client v1.0.0
+	github.com/neovim/go-client v1.1.0
 	github.com/peterh/liner v1.2.0 // indirect
 	github.com/philhofer/fwd v1.0.0 // indirect
 	github.com/pkg/errors v0.8.1
